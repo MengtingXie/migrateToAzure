@@ -29,5 +29,7 @@
         "env.bak{,/**}",
         "venv.bak{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f655c03e-bebf-41a3-8b5a-5745bc4cc405/resourceGroups/MigrateAppToAzure/providers/Microsoft.Web/sites/NotificationApp38",
+    "appService.deploySubpath": "."
 }

@@ -68,8 +68,8 @@ def notification():
             db.session.commit()
          
             my_queue_client = QueueClient.from_connection_string(app.config.get('SERVICE_BUS_CONNECTION_STRING'), app.config.get('SERVICE_BUS_QUEUE_NAME'))
-            logging.error('msg str: %s', Message((notification.id)))
-            my_queue_client.send(Message((notification.id)))
+            logging.error('msg str: %s', Message(int(notification.id)))
+            my_queue_client.send(Message('{}'.format(notification.id)))
 
             return redirect('/Notifications')
 
