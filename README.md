@@ -71,4 +71,4 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
 
-By refactoring the sending email and updating database process to a smaller function in Azure Function, long runing process is avoided and provide better performance and user experience on the web app.  It's cost effective to share one app serive plan and scale independently in the future. 
+By refactoring the sending email and updating database process to a smaller function in Azure Function, long runing process is avoided. The web app provides better performance and user experience.  It's cost effective to share one app serive plan and scale independently in the future. 
